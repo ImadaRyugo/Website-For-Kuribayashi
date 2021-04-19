@@ -1,0 +1,304 @@
+body {
+  font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+	font-size: 14px;
+	color: #333;
+}
+
+header {
+  font-family: 'Lato', sans-serif;
+  max-width: 960px;
+  height: 170px;
+  padding-top: 50px;
+  position: fixed;
+}
+
+.navbar {
+  margin-top:20px;
+  margin-bottom: 20px;
+  padding-right: 60px;
+  padding-left: 80px;
+  width: 100%;
+}
+
+.headerNav {
+  position: fixed;
+  right: -250px;
+  top: 0;
+  width: 240px;
+  height: 100vh;
+  background-color: rgba(238, 238, 238, 0.6);
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  z-index: 20;
+}
+
+.nav a{
+  color: #333;
+  text-decoration:none;
+  padding-left: 30px;
+  transition: all 0.3s;
+}
+
+.nav a:hover {
+  color: #333;
+  transform:translate(15px,0);
+
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: block;
+  font-family: 'Lato', sans-serif;
+	font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+.navItem {
+  padding: 1rem 1rem 0;
+}
+
+.navItem a {
+  display: block;
+  border-bottom: 1px solid #eee;
+  color: #707070;
+  padding: 4rem 0 1rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hamburger_btn {
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  z-index: 30;
+}
+
+.hamburger_line {
+  margin-top:9px;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #111;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+.hamburger_line_1 {
+  top: 20px;
+}
+.hamburger_line_2 {
+  top: 26px;
+}
+.hamburger_line_3 {
+  top: 32px;
+}
+
+.black-bg {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  cursor: pointer;
+}
+
+.nav-open .headerNav {
+  right: 0;
+}
+
+
+.nav-open .black-bg {
+  opacity: .8;
+  visibility: visible;
+}
+
+.nav-open .hamburger_line_1 {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 25px;
+}
+.nav-open .hamburger_line_2 {
+    width: 0;
+    
+}
+.nav-open .hamburger_line_3 {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 25px;
+}
+
+.icon {
+  width: 27px;
+  height: 27px;
+}
+
+.ibm {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.bi-chevron-double-down {
+  margin-left: 700px;
+  margin-top: 100px;
+}
+
+.mainVisual {
+  position: relative;
+}
+
+.mainVisual img{
+  width: 100%;
+  height: auto;
+}
+
+#container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.main {
+  width: 100%;
+}
+
+.title {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.0;
+  font-weight: 100;
+  font-size: 55px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 60px;
+}
+
+.one {
+  margin-top: 100px;
+}
+
+.text {
+  text-align: center;
+  line-height: 1.7;
+  font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+  font-size: 17px;
+  color: #333;
+  letter-spacing: 0.1em;
+}
+
+.text br {
+  display: none;
+}
+
+.card {
+  height: 300px;
+}
+
+.btn-primary {
+  background-color: white;
+}
+
+.publication__list {
+  display: flex; 
+  flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center; 
+  justify-content: space-around;
+  margin-top: 50px;
+  padding:0px 0px 0px 0px;
+}
+
+.publication__list li {
+  margin-left: 10px;
+  margin-bottom: 80px;
+  list-style: none;
+  text-align: right;
+}
+
+.publication__text {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+
+.detail {
+  font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	padding: 8px 12px;
+	background-color: #eee;
+	letter-spacing: 0.1em;
+  color: #333;
+  text-decoration: none;
+}
+
+.detail:hover {
+	color:#333;
+  opacity: 0.8;
+}
+
+.awards {
+  margin-bottom: 200px;
+  margin-top: -80px;
+}
+
+.award {
+  display: inline-block;
+  text-align: center;
+  margin-left: 140px;
+  overflow-wrap: normal;
+}
+
+.award br {
+  display: none;
+}
+
+.awards__detail {
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	padding: 8px 12px;
+	background-color: #eee;
+	letter-spacing: 0.1em;
+  color: #333;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.awards__detail :hover {
+  color:#333;
+  opacity: 0.8;
+}
+
+
+.contact {
+  margin-bottom: 150px;
+  font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+  font-size: 17px;
+  color: #333;
+  line-height: 1.9;
+  text-align: left;
+  letter-spacing: 0.1em;
+}
+
+.toTop {
+  text-align: center;
+}
+
+
+.copyright {
+  font-size: 15px;
+  letter-spacing: 0.15em;
+  opacity: 0.7;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
