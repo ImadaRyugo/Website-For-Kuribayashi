@@ -8,6 +8,36 @@ body {
     margin-left: 10px;
     font-family: 'Lato', sans-serif;
     position: fixed;
+    margin-top:20px;
+    margin-bottom: 20px;
+    padding-right: 60px;
+    padding-left: 80px;
+    width: 100%;
+  }
+
+  .headerNav {
+    position: fixed;
+    right: -250px;
+    top: 0;
+    width: 240px;
+    height: 100vh;
+    background-color: rgba(238, 238, 238, 0.6);
+    -webkit-transition: all .6s;
+    transition: all .6s;
+    z-index: 20;
+  }
+
+  .navItem {
+    padding: 1rem 1rem 0;
+  }
+
+  .navItem a {
+    display: block;
+    border-bottom: 1px solid #eee;
+    color: #707070;
+    padding: 4rem 0 1rem;
+    width: 100%;
+    margin: 0 auto;
   }
   
   .nav {
@@ -16,6 +46,8 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     letter-spacing: 0.1em;
+    text-align: center;
+    display: block;
   }
   
   .nav a{
@@ -24,10 +56,76 @@ body {
     padding-left: 30px;
     transition: all 0.3s;
   }
-  
+
   .nav a:hover {
     color: #333;
     transform:translate(15px,0);
+  }
+
+  .hamburger_btn {
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    z-index: 30;
+  }
+  
+  .hamburger_line {
+    margin-top:9px;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #111;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+  }
+  .hamburger_line_1 {
+    top: 20px;
+  }
+  .hamburger_line_2 {
+    top: 26px;
+  }
+  .hamburger_line_3 {
+    top: 32px;
+  }
+  
+  .black-bg {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+    cursor: pointer;
+  }
+
+  .nav-open .headerNav {
+    right: 0;
+  }
+  
+  .nav-open .black-bg {
+    opacity: .8;
+    visibility: visible;
+  }
+  
+  .nav-open .hamburger_line_1 {
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      top: 25px;
+  }
+  .nav-open .hamburger_line_2 {
+      width: 0;
+      
+  }
+  .nav-open .hamburger_line_3 {
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      top: 25px;
   }
   
   .icon {
@@ -51,7 +149,7 @@ body {
 
   .bi-chevron-double-down {
     margin-left: 700px;
-    margin-top: 100px;
+    margin-top: 70px;
   }
   
   #container {
@@ -159,13 +257,27 @@ body {
   
   
   .contact {
-    margin-bottom: 150px;
+    margin-bottom: 70px;
     font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
     font-size: 17px;
     color: #333;
     line-height: 1.9;
     text-align: left;
     letter-spacing: 0.1em;
+  }
+
+  .follow {
+    margin-bottom: 140px;
+    text-align: center;
+  }
+  
+  .follow h3 {
+    font-size:17px;
+    line-height: 1.0;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    font-family: 'Lato', sans-serif;
+    color: #333;
   }
   
   .toTop {
@@ -178,7 +290,7 @@ body {
     letter-spacing: 0.15em;
     opacity: 0.7;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-bottom: 30px;
   }
   
@@ -276,5 +388,9 @@ body {
 
    .nav-link {
     margin-left: -25px;
+   }
+
+   .follow h3 {
+    font-size:15px;
    }
     

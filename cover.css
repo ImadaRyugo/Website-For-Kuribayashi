@@ -18,6 +18,7 @@ header {
   padding-right: 60px;
   padding-left: 80px;
   width: 100%;
+  position:fixed;
 }
 
 .headerNav {
@@ -37,16 +38,18 @@ header {
   text-decoration:none;
   padding-left: 30px;
   transition: all 0.3s;
+  opacity: 0.8;
 }
 
 .nav a:hover {
-  color: #333;
+  color:black;
   transform:translate(15px,0);
-
+  opacity: 1;
 }
 
 .nav {
-  margin: 0;
+  margin-top: 50px;
+  margin-right: -10px;
   padding: 0;
   text-align: center;
   display: block;
@@ -147,7 +150,7 @@ header {
 
 .bi-chevron-double-down {
   margin-left: 700px;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 .mainVisual {
@@ -280,13 +283,27 @@ header {
 
 
 .contact {
-  margin-bottom: 150px;
+  margin-bottom: 70px;
   font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
   font-size: 17px;
   color: #333;
   line-height: 1.9;
   text-align: left;
   letter-spacing: 0.1em;
+}
+
+.follow {
+  margin-bottom: 140px;
+  text-align: center;
+}
+
+.follow h3 {
+  font-size:17px;
+  line-height: 1.0;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  font-family: 'Lato', sans-serif;
+  color: #333;
 }
 
 .toTop {
@@ -299,6 +316,6 @@ header {
   letter-spacing: 0.15em;
   opacity: 0.7;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 70px;
   margin-bottom: 30px;
 }
