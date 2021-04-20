@@ -4,12 +4,9 @@ body {
 	color: #333;
 }
 
-header {
-  font-family: 'Lato', sans-serif;
-  max-width: 960px;
-  height: 170px;
-  padding-top: 50px;
-  position: fixed;
+.bi {
+  opacity:0.9;
+  color: #333;
 }
 
 .navbar {
@@ -281,7 +278,6 @@ header {
   opacity: 0.8;
 }
 
-
 .contact {
   margin-bottom: 70px;
   font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
@@ -295,6 +291,7 @@ header {
 .follow {
   margin-bottom: 140px;
   text-align: center;
+  opacity:0.8;
 }
 
 .follow h3 {
@@ -309,7 +306,6 @@ header {
 .toTop {
   text-align: center;
 }
-
 
 .copyright {
   font-size: 15px;

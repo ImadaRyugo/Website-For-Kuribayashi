@@ -3,7 +3,12 @@ body {
       font-size: 14px;
       color: #333;
   }
-  
+
+  .bi {
+    opacity:0.9;
+    color: #333;
+  }
+
   .navbar {
     margin-left: 10px;
     font-family: 'Lato', sans-serif;
@@ -114,18 +119,18 @@ body {
   }
   
   .nav-open .hamburger_line_1 {
-      -webkit-transform: rotate(45deg);
-      transform: rotate(45deg);
-      top: 25px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 25px;
   }
   .nav-open .hamburger_line_2 {
-      width: 0;
+    width: 0;
       
   }
   .nav-open .hamburger_line_3 {
-      -webkit-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-      top: 25px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 25px;
   }
   
   .icon {
@@ -317,7 +322,7 @@ body {
   }
 
   .workExperience {
-    margin-bottom:200px;
+    margin-bottom:180px;
   }
     
    .text {
@@ -338,7 +343,7 @@ body {
    }
 
    .copyright {
-    font-size: 11px;
+    font-size: 10px;
    }
 
    td {
@@ -372,14 +377,11 @@ body {
 
    .awards {
     margin-bottom: 150px;
+    text-align: center;
   }
 
    .award br{
     display: inline;
-   }
-
-   .award {
-    margin-left: 40px;
    }
 
    .awards__detail {
