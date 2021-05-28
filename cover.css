@@ -45,7 +45,7 @@ body {
 }
 
 .nav {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-right: -10px;
   padding: 0;
   text-align: center;
@@ -56,14 +56,14 @@ body {
 }
 
 .navItem {
-  padding: 1rem 1rem 0;
+  padding: 0rem 1rem 0;
 }
 
 .navItem a {
   display: block;
   border-bottom: 1px solid #eee;
   color: #707070;
-  padding: 4rem 0 1rem;
+  padding: 4rem 1rem 1rem;
   width: 100%;
   margin: 0 auto;
 }
@@ -147,7 +147,7 @@ body {
 
 .bi-chevron-double-down {
   margin-left: 700px;
-  margin-top: 70px;
+  margin-top: 95px;
 }
 
 .mainVisual {
@@ -273,9 +273,41 @@ body {
   margin-left: 20px;
 }
 
-.awards__detail :hover {
+.awards__detail:hover {
   color:#333;
   opacity: 0.8;
+}
+
+.media {
+  text-align: center;
+  overflow-wrap: normal;
+  margin-bottom: -2px;
+}
+
+.submedia {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.media__detail {
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	padding: 8px 12px;
+	background-color: #eee;
+	letter-spacing: 0.1em;
+  color: #333;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.media__detail:hover {
+  color:#333;
+  opacity: 0.8;
+}
+
+.more {
+  margin-left: 10px;
 }
 
 .contact {
@@ -314,4 +346,23 @@ body {
   text-align: center;
   margin-top: 70px;
   margin-bottom: 30px;
+}
+
+.fade-in {
+  opacity: 0;
+  transition-duration: 700ms;
+  transition-property: opacity, transform;
+}
+
+.fade-in-up {
+  transform: translate(0, 50px);
+}
+
+.fade-in-right {
+  transform: translate(50px, 0);
+}
+
+.scroll-in {
+  opacity: 1;
+  transform: translate(0, 0);
 }

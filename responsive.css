@@ -33,20 +33,20 @@ body {
   }
 
   .navItem {
-    padding: 1rem 1rem 0;
+    padding: 0rem 1rem 0;
   }
 
   .navItem a {
     display: block;
     border-bottom: 1px solid #eee;
     color: #707070;
-    padding: 4rem 0 1rem;
+    padding: 4rem 1rem 1rem;
     width: 100%;
     margin: 0 auto;
   }
   
   .nav {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-right: -10px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -154,7 +154,7 @@ body {
 
   .bi-chevron-double-down {
     margin-left: 700px;
-    margin-top: 70px;
+    margin-top: 95px;
   }
   
   #container {
@@ -318,7 +318,7 @@ body {
    }
 
    .bi-chevron-double-down {
-    display: none;
+    margin-left: 50%;
   }
 
   .workExperience {
@@ -360,7 +360,11 @@ body {
    }
 
    .navItem a {
-    padding: 2rem 0 1rem;
+    padding: 2rem 0rem 1rem;
+   }
+
+   .first {
+    margin-top: 20px;
    }
 
    .nav a{
@@ -388,6 +392,10 @@ body {
     margin: 15px 0px 30px 250px;
    }
 
+   .media__detail {
+    margin: 10px 0px 35px 260px;
+   }
+
    .nav-link {
     margin-left: -25px;
    }
@@ -395,4 +403,4 @@ body {
    .follow h3 {
     font-size:15px;
    }
-    
+}
