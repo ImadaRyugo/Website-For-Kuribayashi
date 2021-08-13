@@ -127,7 +127,6 @@ body {
 }
 .nav-open .hamburger_line_2 {
     width: 0;
-    
 }
 .nav-open .hamburger_line_3 {
     -webkit-transform: rotate(-45deg);
@@ -143,11 +142,6 @@ body {
 .ibm {
   margin-top: 60px;
   text-align: center;
-}
-
-.bi-chevron-double-down {
-  margin-left: 700px;
-  margin-top: 95px;
 }
 
 .mainVisual {
@@ -179,8 +173,12 @@ body {
   margin-bottom: 60px;
 }
 
-.one {
-  margin-top: 100px;
+.title.one {
+  margin-top: 0px;
+}
+
+.position-relative p {
+  padding-left: 4px;
 }
 
 .text {
